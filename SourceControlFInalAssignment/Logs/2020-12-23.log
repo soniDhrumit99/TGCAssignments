@@ -1,0 +1,35 @@
+--------------------- Error(2020-12-23 04:17:57.1235)LENOVO-15ISK-------------------- 
+                               
+                               Exception Type:System.InvalidOperationException
+                               Exception Message:Sequence contains no elements
+                               Stack Trace:
+                               Additional Info:Error while Logging in
+
+--------------------- Info(2020-12-23 04:22:20.0498)LENOVO-15ISK-------------------- 
+                               
+                               Exception Type:
+                               Exception Message:
+                               Stack Trace:
+                               Additional Info:"" attempted login at "23-12-2020 04:22:20 AM" from "::1" with username "sad@gmail.com" and password "Dhrumit@912"
+
+--------------------- Info(2020-12-23 04:25:16.9975)LENOVO-15ISK-------------------- 
+                               
+                               Exception Type:
+                               Exception Message:
+                               Stack Trace:
+                               Additional Info:"" attempted login at "23-12-2020 04:25:16 AM" from "::1" with username "sonidhrumit999@gmail.com" and password "Dhrumit@912"
+
+--------------------- Info(2020-12-23 04:26:07.2342)LENOVO-15ISK-------------------- 
+                               
+                               Exception Type:
+                               Exception Message:
+                               Stack Trace:
+                               Additional Info:"sonidhrumit999@gmail.com" logged in at "23-12-2020 04:26:07 AM" from "::1"
+
+--------------------- Error(2020-12-23 04:26:07.5787)LENOVO-15ISK-------------------- 
+                               
+                               Exception Type:System.InvalidOperationException
+                               Exception Message:Sequence contains no elements
+                               Stack Trace:
+                               Additional Info:Error while loading the dashboard
+

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace SourceControlFInalAssignment
+namespace SourceControlFinalAssignment
 {
     public class RouteConfig
     {
@@ -16,7 +16,7 @@ namespace SourceControlFInalAssignment
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "User", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "User", action = "login", id = UrlParameter.Optional }
             );
         }
     }

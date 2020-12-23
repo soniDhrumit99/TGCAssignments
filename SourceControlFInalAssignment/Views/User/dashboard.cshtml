@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>dashboard</title>
+</head>
+<body class="container-fluid">
+    @Styles.Render("~/Content/css")
+
+    <header class="row d-flex justify-content-end align-items-end px-3">
+        <button class="btn btn-warning mr-3">
+            @Html.ActionLink("Logout", "logout", "User")
+        </button>
+    </header>
+    <hr />
+    <section class="row d-flex flex-column justify-content-center align-items-center text-center" style="height: 70vh;">
+        <p>Welcome @ViewBag.model.Name ...</p>
+        <p>Email : @ViewBag.model.Email</p>
+        <p>Phone : @ViewBag.model.Phone</p>
+        <p>Birthdate : @ViewBag.model.Birthdate</p>
+        <p>City : @ViewBag.model.City</p>
+        <p>Country : @ViewBag.model.Country</p>
+    </section>
+    <hr />
+    <footer class="row d-flex justify-content-between px-3 align-items-center">
+        <span>
+            &copy; Copyright 2020
+        </span>
+        <span>
+            Design by Dhrumit Soni
+        </span>
+    </footer>
+    
+    @Scripts.Render("~/bundles/scripts")
+</body>
+</html>
