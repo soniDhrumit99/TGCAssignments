@@ -1,0 +1,25 @@
+2021-01-12 16:19:20.1981 INFO User admin logged in at 2021-01-12:10-49-20.196
+2021-01-12 16:25:08.6539 INFO User admin added a new product with name Some Product at 2021-01-12:10-55-08.653
+2021-01-12 16:25:08.7875 ERROR Error with database or Api
+2021-01-12 16:28:35.6129 ERROR Error with database or Api
+2021-01-12 16:29:53.0872 ERROR Error with database or Api
+2021-01-12 16:29:57.7130 ERROR Error with database or Api
+2021-01-12 16:29:59.4170 ERROR Error with database or Api
+2021-01-12 16:30:00.2913 ERROR Error with database or Api
+2021-01-12 16:30:03.4367 ERROR Error with database or Api
+2021-01-12 16:34:30.8400 INFO User customer logged in at 2021-01-12:11-04-30.838
+2021-01-12 16:35:08.7069 INFO User customer added a new product with name Another product at 2021-01-12:11-05-08.706
+2021-01-12 16:35:52.4761 INFO User customer added a new product with name More product at 2021-01-12:11-05-52.476
+2021-01-12 16:44:45.2026 INFO User customer added a new product with name products at 2021-01-12:11-14-45.202
+2021-01-12 16:45:43.0429 INFO User customer added a new product with name Product at 2021-01-12:11-15-43.042
+2021-01-12 16:48:43.6482 INFO User customer edited the product Another product at 2021-01-12:11-18-43.648
+2021-01-12 16:53:17.2612 INFO User customer deleted the product products at 2021-01-12:11-23-17.261
+2021-01-12 16:53:29.2691 INFO User customer edited the product Product at 2021-01-12:11-23-29.269
+2021-01-12 16:54:42.1390 INFO User admin logged in at 2021-01-12:11-24-42.139
+2021-01-12 16:54:42.4723 ERROR Error in database
+2021-01-12 16:56:36.6299 INFO User admin logged in at 2021-01-12:11-26-36.629
+2021-01-12 16:56:48.8132 INFO User admin deleted the product Some other product at 2021-01-12:11-26-48.813
+2021-01-12 16:57:51.4002 INFO User admin logged in at 2021-01-12:11-27-51.398
+2021-01-12 16:59:47.3116 INFO User customer logged in at 2021-01-12:11-29-47.311
+2021-01-12 17:00:14.2491 INFO User customer logged in at 2021-01-12:11-30-14.247
+2021-01-12 17:01:07.4252 INFO User admin logged in at 2021-01-12:11-31-07.425

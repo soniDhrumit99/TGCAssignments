@@ -1,0 +1,128 @@
+﻿*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: rgb(127, 146, 255);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand{
+    font-size: 1.5rem;
+    color: whitesmoke;
+    transition: all 0.3s ease-in-out;
+}
+
+    .navbar-brand:hover {
+        color: rgb(227, 227, 227);
+    }
+
+.navbar-nav a{
+    color: whitesmoke;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav a:hover {
+    color: rgb(227, 227, 227);
+}
+
+.body-content{
+    margin-top: 62px;
+}
+
+.side-nav {
+    background-color: rgb(234, 234, 234);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 62px;
+    left: 0;
+    height: calc(100vh - 62px);
+    width: 20%;
+    max-width: 230px;
+}
+
+.side-nav a{
+    color: black;
+}
+
+.side-nav svg {
+    transition: all 0.3s ease-in-out;
+}
+
+.side-nav a:hover{
+    text-decoration: none;
+}
+
+.side-nav a:hover svg.fa-list{
+    transform: translate(-5px);
+    
+}
+
+.side-nav a:hover svg.fa-plus{
+    transform: rotate(45deg);
+}
+
+.main-content{
+    margin-left: 230px;
+    width: calc(100vw - 231.68px);
+}
+
+.dataTables_wrapper{
+    width: 100%;
+}
+
+table.table.dataTable.no-footer{
+    border-bottom: none;
+}
+
+.thead-blue {
+    background-color: rgb(127, 146, 255);
+}
+
+.form-horizontal{
+    width: 90%;
+}
+
+.form-container {
+    width: 80%;
+}
+
+.form-control-file {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: 0.18rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.toast.toast-add, .toast.toast-edit, .toast.toast-delete {
+    position: absolute;
+    top: 1%;
+    right: 0%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.toast.toast-add {
+    background-color: rgba(40, 167, 69, 0.8);
+}
+
+.toast.toast-edit {
+    background-color: rgba(255, 193, 7, 0.8);
+}
+
+.toast.toast-delete {
+    background-color: rgba(220, 53, 69, 0.8);
+}
+
+.toast.toast-add.show, .toast.toast-edit.show, .toast.toast-delete.show {
+    opacity: 1;
+    right: 3%;
+}

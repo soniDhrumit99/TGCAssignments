@@ -1,0 +1,318 @@
+﻿@model ProductManagement.Models.Products
+
+@{
+    Html.EnableClientValidation(true);
+}
+
+@if ((bool)TempData.Peek("editing"))
+{
+    using (Html.BeginForm("EditProduct", "User", FormMethod.Post, new { enctype = "multipart/form-data", @class = "d-flex justify-content-center align-items-center" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-container">
+            <h4>Add Product</h4>
+            <hr />
+            <div class="row">
+                @Html.HiddenFor(model => model.Id)
+                <div class="row col-6 m-0 p-3">
+                    <div class="form-group col-12">
+                        @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div>
+                            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", autocomplete = "off" } })
+                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group col-12">
+                        @Html.LabelFor(model => model.Category, "Category", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="">
+                            @Html.DropDownListFor(model => model.Category, new SelectList(Model.Categories, "Id", "Name"), "Select a category", htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Category, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group col-12">
+                        @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="">
+                            @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control", @value = "0.00", autocomplete = "off" } })
+                            @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-6 m-0 p-3">
+                    <div class="d-flex justify-content-center align-items-center col-12">
+                        @if ((bool)TempData.Peek("editing"))
+                        {
+                            <img src="@Model.ImagePath" alt="" class="" height="230" width="230" id="img-preview" />
+                        }
+                        else
+                        {
+                            <img src="" alt="" class="" height="230" width="230" id="img-preview" />
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group col-12">
+                        @Html.LabelFor(model => model.Quantity, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="">
+                            <select id="Quantity" name="Quantity" class="form-control">
+                                @if ((bool)TempData.Peek("editing"))
+                                {
+                                    switch (Model.Quantity)
+                                    {
+                                        case 5:
+                                            <option value="5" selected="selected">5</option>
+                                            <option value="10">10</option>
+                                            <option value="15">15</option>
+                                            <option value="20">20</option>
+                                            <option value="50">50</option>
+                                            break;
+                                        case 10:
+                                            <option value="5">5</option>
+                                            <option value="10" selected="selected">10</option>
+                                            <option value="15">15</option>
+                                            <option value="20">20</option>
+                                            <option value="50">50</option>
+                                            break;
+                                        case 15:
+                                            <option value="5">5</option>
+                                            <option value="10">10</option>
+                                            <option value="15" selected="selected">15</option>
+                                            <option value="20">20</option>
+                                            <option value="50">50</option>
+                                            break;
+                                        case 20:
+                                            <option value="5">5</option>
+                                            <option value="10">10</option>
+                                            <option value="15">15</option>
+                                            <option value="20" selected="selected">20</option>
+                                            <option value="50">50</option>
+                                            break;
+                                        case 50:
+                                            <option value="5">5</option>
+                                            <option value="10">10</option>
+                                            <option value="15">15</option>
+                                            <option value="20">20</option>
+                                            <option value="50" selected="selected">50</option>
+                                            break;
+                                    }
+                                }
+                                else
+                                {
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="50">50</option>
+                                }
+                            </select>
+                            @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group col-12">
+                        @Html.LabelFor(model => model.ImagePath, htmlAttributes: new { @class = "control-label" })
+                        <div>
+                            @if ((bool)TempData.Peek("editing"))
+                            {
+                                <input type="file" class="form-control-file" id="image" name="image" onchange="preview(event)" />
+                            }
+                            else
+                            {
+                                <input type="file" class="form-control-file" required id="image" name="image" onchange="preview(event)" />
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group col-12">
+                @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="">
+                    @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control", autocomplete = "off", rows = "4   " } })
+                    @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="error-group col-12 pb-3 d-flex justify-content-center align-items-center">
+                @Html.ValidationMessage("modelError", new { @class = "validation-message text-danger text-center" })
+            </div>
+
+            <div class="form-group col-12 d-flex justify-content-around align-items-center">
+                @if ((bool)TempData.Peek("editing"))
+                {
+                    <button type="submit" class="btn btn-warning col-2">Update</button>
+                }
+                else
+                {
+                    <button type="submit" class="btn btn-success col-2">Add</button>
+                }
+                <button type="reset" class="btn btn-danger col-2">Reset</button>
+            </div>
+        </div>
+    }
+}
+else
+{
+    using (Html.BeginForm("AddProduct", "User", FormMethod.Post, new { enctype = "multipart/form-data", @class = "d-flex justify-content-center align-items-center" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-container">
+            <h4>Add Product</h4>
+            <hr />
+            <div class="row">
+                <div class="row col-6 m-0 p-3">
+                    <div class="form-group col-12">
+                        @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div>
+                            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", autocomplete = "off" } })
+                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group col-12">
+                        @Html.LabelFor(model => model.Category, "Category", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="">
+                            @Html.DropDownListFor(model => model.Category, new SelectList(Model.Categories, "Id", "Name"), "Select a category", htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Category, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group col-12">
+                        @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="">
+                            @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control", @value = "0.00", autocomplete = "off" } })
+                            @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-6 m-0 p-3">
+                    <div class="d-flex justify-content-center align-items-center col-12">
+                        @if ((bool)TempData.Peek("editing"))
+                        {
+                            <img src="@Model.ImagePath" alt="" class="" height="230" width="180" id="img-preview" />
+                        }
+                        else
+                        {
+                            <img src="" alt="" class="" height="230" width="180" id="img-preview" />
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group col-12">
+                        @Html.LabelFor(model => model.Quantity, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="">
+                            <select id="Quantity" name="Quantity" class="form-control">
+                                @if ((bool)TempData.Peek("editing"))
+                                {
+                                    switch (Model.Quantity)
+                                    {
+                                        case 5:
+                                            <option value="5" selected="selected">5</option>
+                                            <option value="10">10</option>
+                                            <option value="15">15</option>
+                                            <option value="20">20</option>
+                                            <option value="50">50</option>
+                                            break;
+                                        case 10:
+                                            <option value="5">5</option>
+                                            <option value="10" selected="selected">10</option>
+                                            <option value="15">15</option>
+                                            <option value="20">20</option>
+                                            <option value="50">50</option>
+                                            break;
+                                        case 15:
+                                            <option value="5">5</option>
+                                            <option value="10">10</option>
+                                            <option value="15" selected="selected">15</option>
+                                            <option value="20">20</option>
+                                            <option value="50">50</option>
+                                            break;
+                                        case 20:
+                                            <option value="5">5</option>
+                                            <option value="10">10</option>
+                                            <option value="15">15</option>
+                                            <option value="20" selected="selected">20</option>
+                                            <option value="50">50</option>
+                                            break;
+                                        case 50:
+                                            <option value="5">5</option>
+                                            <option value="10">10</option>
+                                            <option value="15">15</option>
+                                            <option value="20">20</option>
+                                            <option value="50" selected="selected">50</option>
+                                            break;
+                                    }
+                                }
+                                else
+                                {
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="50">50</option>
+                                }
+                            </select>
+                            @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group col-12">
+                        @Html.LabelFor(model => model.ImagePath, htmlAttributes: new { @class = "control-label" })
+                        <div>
+                            @if ((bool)TempData.Peek("editing"))
+                            {
+                                <input type="file" class="form-control-file" id="image" name="image" onchange="preview(event)" />
+                            }
+                            else
+                            {
+                                <input type="file" class="form-control-file" required id="image" name="image" onchange="preview(event)" />
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group col-12">
+                @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="">
+                    @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control", autocomplete = "off", rows = "4   " } })
+                    @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="error-group col-12 pb-3 d-flex justify-content-center align-items-center">
+                @Html.ValidationMessage("addProductError", new { @class = "validation-message text-danger text-center" })
+            </div>
+
+            <div class="form-group col-12 d-flex justify-content-around align-items-center">
+                @if ((bool)TempData.Peek("editing"))
+                {
+                    <button type="submit" class="btn btn-warning col-2">Update</button>
+                }
+                else
+                {
+                    <button type="submit" class="btn btn-success col-2">Add</button>
+                }
+                <button type="reset" class="btn btn-danger col-2">Reset</button>
+            </div>
+        </div>
+    }
+}
+@section scripts{
+    <script>
+        const preview = function (event) {
+            var output = document.getElementById('img-preview');
+            output.src = URL.createObjectURL(event.target.files[0]);
+            output.onload = function () {
+                URL.revokeObjectURL(output.src);
+            };
+        };
+    </script>
+}
