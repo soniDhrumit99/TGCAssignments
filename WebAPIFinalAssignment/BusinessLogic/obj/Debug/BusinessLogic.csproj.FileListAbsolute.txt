@@ -1,0 +1,64 @@
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\obj\Debug\BusinessLogic.csprojAssemblyReference.cache
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompileInputs.cache
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\BusinessLogic.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\BusinessLogic.pdb
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\System.Net.Http.Formatting.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\System.Web.Http.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\Unity.Abstractions.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\Unity.Container.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\Unity.WebApi.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\System.Threading.Tasks.Extensions.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\Newtonsoft.Json.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\System.Net.Http.Formatting.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\System.Web.Http.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\Unity.Abstractions.pdb
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\Unity.Container.pdb
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\obj\Debug\BusinessLogic.csproj.CopyComplete
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\obj\Debug\BusinessLogic.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\obj\Debug\BusinessLogic.pdb
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\DatabaseAccess.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\EntityFramework.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\DatabaseAccess.pdb
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\DatabaseAccess.dll.config
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\EntityFramework.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\DatabaseModels.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\DatabaseModels.pdb
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\DatabaseModels.dll.config
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\BusinessLogic.dll.config
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\BusinessLogic.dll.config
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\BusinessLogic.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\BusinessLogic.pdb
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\DatabaseAccess.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\DatabaseModels.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\EntityFramework.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\System.Net.Http.Formatting.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\System.Web.Http.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\Unity.Abstractions.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\Unity.Container.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\Unity.WebApi.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\System.Threading.Tasks.Extensions.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\DatabaseAccess.pdb
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\DatabaseAccess.dll.config
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\DatabaseModels.pdb
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\DatabaseModels.dll.config
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\EntityFramework.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\Newtonsoft.Json.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\System.Net.Http.Formatting.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\System.Web.Http.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\Unity.Abstractions.pdb
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\bin\Debug\Unity.Container.pdb
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\obj\Debug\BusinessLogic.csprojAssemblyReference.cache
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompileInputs.cache
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\obj\Debug\BusinessLogic.csproj.CopyComplete
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\obj\Debug\BusinessLogic.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\BusinessLogic\obj\Debug\BusinessLogic.pdb

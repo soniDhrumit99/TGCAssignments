@@ -1,0 +1,34 @@
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\DatabaseAccess\bin\Debug\DatabaseAccess.dll.config
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\DatabaseAccess\bin\Debug\DatabaseAccess.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\DatabaseAccess\bin\Debug\DatabaseAccess.pdb
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\DatabaseAccess\bin\Debug\EntityFramework.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\DatabaseAccess\bin\Debug\EntityFramework.SqlServer.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\DatabaseAccess\bin\Debug\EntityFramework.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\DatabaseAccess\bin\Debug\EntityFramework.SqlServer.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\DatabaseAccess\obj\Debug\DatabaseAccess.csprojAssemblyReference.cache
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\DatabaseAccess\obj\Debug\DatabaseAccess.csproj.CoreCompileInputs.cache
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\DatabaseAccess\obj\Debug\DatabaseAccess.csproj.CopyComplete
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\DatabaseAccess\obj\Debug\DatabaseAccess.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\DatabaseAccess\obj\Debug\DatabaseAccess.pdb
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\DatabaseAccess\bin\Debug\DatabaseModels.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\DatabaseAccess\bin\Debug\DatabaseModels.pdb
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\DatabaseAccess\bin\Debug\DatabaseModels.dll.config
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\DatabaseAccess\bin\Debug\Newtonsoft.Json.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\DatabaseAccess\bin\Debug\Newtonsoft.Json.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\DatabaseAccess\bin\Debug\DatabaseAccess.dll.config
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\DatabaseAccess\bin\Debug\DatabaseAccess.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\DatabaseAccess\bin\Debug\DatabaseAccess.pdb
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\DatabaseAccess\bin\Debug\DatabaseModels.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\DatabaseAccess\bin\Debug\EntityFramework.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\DatabaseAccess\bin\Debug\EntityFramework.SqlServer.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\DatabaseAccess\bin\Debug\Newtonsoft.Json.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\DatabaseAccess\bin\Debug\DatabaseModels.pdb
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\DatabaseAccess\bin\Debug\DatabaseModels.dll.config
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\DatabaseAccess\bin\Debug\EntityFramework.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\DatabaseAccess\bin\Debug\EntityFramework.SqlServer.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\DatabaseAccess\bin\Debug\Newtonsoft.Json.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\DatabaseAccess\obj\Debug\DatabaseAccess.csprojAssemblyReference.cache
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\DatabaseAccess\obj\Debug\DatabaseAccess.csproj.CoreCompileInputs.cache
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\DatabaseAccess\obj\Debug\DatabaseAccess.csproj.CopyComplete
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\DatabaseAccess\obj\Debug\DatabaseAccess.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\DatabaseAccess\obj\Debug\DatabaseAccess.pdb

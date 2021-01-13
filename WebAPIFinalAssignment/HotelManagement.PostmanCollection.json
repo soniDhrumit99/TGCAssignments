@@ -1,0 +1,408 @@
+{
+	"info": {
+		"_postman_id": "375e8003-f8d4-4c39-a8d1-545c57c5e02a",
+		"name": "Hotel Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Accounts",
+			"item": [
+				{
+					"name": "POST: Register Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"myemail@email.com\",\r\n    \"password\": \"MyPassword@0123\",\r\n    \"confirmPassword\": \"MyPassword@0123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/api/Account/Register",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"Account",
+								"Register"
+							]
+						},
+						"description": "Registing a new account to access WebAPI"
+					},
+					"response": []
+				},
+				{
+					"name": "POST: Token Request",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);\r",
+									"pm.collectionVariables.set(\"token\", jsonData.access_token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "username=myemail@email.com&password=MyPassword@0123&grant_type=password",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/Token",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"Token"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Requests for Account related activites like registering new account and requesting auth token.",
+			"auth": {
+				"type": "noauth"
+			}
+		},
+		{
+			"name": "Hotel Controller",
+			"item": [
+				{
+					"name": "GET: Hotel List",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/api/Hotel/all",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"Hotel",
+								"all"
+							]
+						},
+						"description": "Get all the hotels sorted by alphabetical order."
+					},
+					"response": []
+				},
+				{
+					"name": "POST: Hotel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Hotel 4\",\r\n    \"Address\": \"Area 4, Surat, Gujarat\",\r\n    \"City\": \"Surat\",\r\n    \"Pincode\": \"289374\",\r\n    \"ContactNumber\": \"7448391765\",\r\n    \"ContactPerson\": \"Person 4\",\r\n    \"Website\": \"www.someweb4.com\",\r\n    \"Facebook\": \"www.facebook.com/somepage3\",\r\n    \"Twitter\": \"www.twitter.com/somepage2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/api/Hotel/add",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"Hotel",
+								"add"
+							]
+						},
+						"description": "Add a new Hotel to the database"
+					},
+					"response": []
+				}
+			],
+			"description": "Requests related to Hotel Controller"
+		},
+		{
+			"name": "Rooms Controller",
+			"item": [
+				{
+					"name": "GET: Rooms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/api/Room/all?price=959&category=small&pincode=289374&hotelCity=Surat",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"Room",
+								"all"
+							],
+							"query": [
+								{
+									"key": "price",
+									"value": "959"
+								},
+								{
+									"key": "category",
+									"value": "small",
+									"description": "small | medium | large"
+								},
+								{
+									"key": "pincode",
+									"value": "289374"
+								},
+								{
+									"key": "hotelCity",
+									"value": "Surat"
+								}
+							]
+						},
+						"description": "Get the list of all the rooms filtered by search paramters, if any"
+					},
+					"response": []
+				},
+				{
+					"name": "GET: Room Availablity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/api/Room/23/availability?date=2021-01-01",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"Room",
+								"23",
+								"availability"
+							],
+							"query": [
+								{
+									"key": "date",
+									"value": "2021-01-01"
+								}
+							]
+						},
+						"description": "Checks the availablity of a Room with the specified room id on the specified date and return true or false."
+					},
+					"response": []
+				},
+				{
+					"name": "POST: Room",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Suite 2\",\r\n    \"Category\": 2,\r\n    \"Price\": 4059,\r\n    \"HotelId\": 7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/api/Room/add",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"Room",
+								"add"
+							]
+						},
+						"description": "Add a new Room to the database"
+					},
+					"response": []
+				},
+				{
+					"name": "POST: Book Room",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/api/Room/4/book?date=2021-02-01",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"Room",
+								"4",
+								"book"
+							],
+							"query": [
+								{
+									"key": "date",
+									"value": "2021-02-01"
+								}
+							]
+						},
+						"description": "Book a specific room for a specific date"
+					},
+					"response": []
+				}
+			],
+			"description": "Reequests related to Room Controller"
+		},
+		{
+			"name": "Booking Controller",
+			"item": [
+				{
+					"name": "Update Booking Date",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/api/Booking/6/updateDate?date=2021-02-15",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"Booking",
+								"6",
+								"updateDate"
+							],
+							"query": [
+								{
+									"key": "date",
+									"value": "2021-02-15"
+								}
+							]
+						},
+						"description": "Request to update booking date of an existing booking"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Booking Status",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/api/Booking/6/updateStatus?status=deleted",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"Booking",
+								"6",
+								"updateStatus"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "deleted"
+								}
+							]
+						},
+						"description": "Request to update booking status of an existing booking"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Booking",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/api/Booking/4/delete",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"Booking",
+								"4",
+								"delete"
+							]
+						},
+						"description": "Request for deleting a booking"
+					},
+					"response": []
+				}
+			],
+			"description": "Requests related to Booking Controller"
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseurl",
+			"value": "https://localhost:44334"
+		},
+		{
+			"key": "token",
+			"value": ""
+		}
+	]
+}

@@ -1,0 +1,212 @@
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\API.dll.config
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\API.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\API.pdb
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\csc.exe
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\csc.exe.config
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\csc.rsp
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\csi.exe
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\csi.exe.config
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\csi.rsp
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\Microsoft.CodeAnalysis.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\Microsoft.CSharp.Core.targets
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\Microsoft.Managed.Core.targets
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\System.Collections.Immutable.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\System.Reflection.Metadata.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\System.Text.Encoding.CodePages.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\System.Threading.Tasks.Extensions.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\vbc.exe
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\vbc.exe.config
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\vbc.rsp
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\VBCSCompiler.exe
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\VBCSCompiler.exe.config
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Antlr3.Runtime.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\EntityFramework.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\EntityFramework.SqlServer.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.AspNet.Identity.Core.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.AspNet.Identity.Owin.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.Owin.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.Owin.Host.SystemWeb.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.Owin.Security.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.Owin.Security.Facebook.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.Owin.Security.Google.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.Owin.Security.OAuth.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.Owin.Security.Twitter.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.Web.Infrastructure.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Newtonsoft.Json.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Owin.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\System.Net.Http.Formatting.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\System.Runtime.CompilerServices.Unsafe.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\System.Web.Http.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\System.Web.Http.Owin.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\System.Web.Http.WebHost.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Unity.Abstractions.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Unity.Container.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Unity.WebApi.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\System.Threading.Tasks.Extensions.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\System.Runtime.CompilerServices.Unsafe.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Newtonsoft.Json.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\System.Net.Http.Formatting.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\System.Web.Http.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\System.Web.Http.WebHost.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Unity.Abstractions.pdb
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Unity.Container.pdb
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Antlr3.Runtime.pdb
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\EntityFramework.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\EntityFramework.SqlServer.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.AspNet.Identity.Core.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.AspNet.Identity.Owin.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.Owin.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.Owin.Host.SystemWeb.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.Owin.Security.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.Owin.Security.Facebook.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.Owin.Security.Cookies.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.Owin.Security.Google.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.Owin.Security.Twitter.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.Owin.Security.OAuth.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\System.Web.Http.Owin.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\obj\Debug\API.csprojAssemblyReference.cache
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\obj\Debug\API.csproj.CoreCompileInputs.cache
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\obj\Debug\API.csproj.CopyComplete
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\obj\Debug\API.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\obj\Debug\API.pdb
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\obj\Debug\API.Migrations.InitialMigration.resources
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\obj\Debug\API.csproj.GenerateResource.cache
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\BusinessLogic.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\DatabaseAccess.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\BusinessLogic.pdb
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\DatabaseAccess.pdb
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\DatabaseAccess.dll.config
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\DatabaseModels.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\DatabaseModels.pdb
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\DatabaseModels.dll.config
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.Owin.Cors.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\System.Web.Cors.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\System.Web.Http.Cors.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.Owin.Cors.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\System.Web.Http.Cors.xml
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\System.Buffers.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\System.Memory.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\System.Numerics.Vectors.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\BusinessLogic.dll.config
+X:\Dhrumit\Gateway Group of Companies\Trainee Assignment\HotelManagementAssignment\API\bin\Microsoft.Owin.Security.Cookies.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\API.dll.config
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\API.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\API.pdb
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\csc.exe
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\csc.exe.config
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\csc.rsp
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\csi.exe
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\csi.exe.config
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\csi.rsp
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\Microsoft.CodeAnalysis.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\Microsoft.CSharp.Core.targets
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\Microsoft.Managed.Core.targets
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\System.Buffers.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\System.Collections.Immutable.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\System.Memory.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\System.Numerics.Vectors.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\System.Reflection.Metadata.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\System.Text.Encoding.CodePages.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\System.Threading.Tasks.Extensions.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\vbc.exe
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\vbc.exe.config
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\vbc.rsp
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\VBCSCompiler.exe
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\roslyn\VBCSCompiler.exe.config
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Antlr3.Runtime.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\BusinessLogic.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\DatabaseModels.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\EntityFramework.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\EntityFramework.SqlServer.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.AspNet.Identity.Core.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.AspNet.Identity.Owin.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.Owin.Cors.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.Owin.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.Owin.Host.SystemWeb.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.Owin.Security.Cookies.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.Owin.Security.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.Owin.Security.Facebook.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.Owin.Security.Google.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.Owin.Security.OAuth.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.Owin.Security.Twitter.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.Web.Infrastructure.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Newtonsoft.Json.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Owin.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\System.Net.Http.Formatting.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\System.Runtime.CompilerServices.Unsafe.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\System.Web.Cors.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\System.Web.Http.Cors.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\System.Web.Http.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\System.Web.Http.Owin.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\System.Web.Http.WebHost.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Unity.Abstractions.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Unity.Container.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Unity.WebApi.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\DatabaseAccess.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\System.Threading.Tasks.Extensions.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\BusinessLogic.pdb
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\BusinessLogic.dll.config
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\DatabaseModels.pdb
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\DatabaseModels.dll.config
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\EntityFramework.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\EntityFramework.SqlServer.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.Owin.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.Owin.Cors.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.Owin.Host.SystemWeb.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.Owin.Security.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.Owin.Security.Cookies.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.Owin.Security.Facebook.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.Owin.Security.Google.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.Owin.Security.OAuth.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.Owin.Security.Twitter.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Newtonsoft.Json.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\System.Runtime.CompilerServices.Unsafe.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\System.Web.Http.Cors.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\System.Net.Http.Formatting.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\System.Web.Http.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\System.Web.Http.WebHost.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Unity.Abstractions.pdb
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Unity.Container.pdb
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Antlr3.Runtime.pdb
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.AspNet.Identity.Core.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.AspNet.Identity.Owin.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\System.Web.Http.Owin.xml
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\DatabaseAccess.pdb
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\bin\DatabaseAccess.dll.config
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\obj\Debug\API.csprojAssemblyReference.cache
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\obj\Debug\API.Migrations.InitialMigration.resources
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\obj\Debug\API.csproj.GenerateResource.cache
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\obj\Debug\API.csproj.CoreCompileInputs.cache
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\obj\Debug\API.csproj.CopyComplete
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\obj\Debug\API.dll
+X:\Dhrumit\Gateway Group of Companies\TGCAssignments\WebAPIFinalAssignment\API\obj\Debug\API.pdb
