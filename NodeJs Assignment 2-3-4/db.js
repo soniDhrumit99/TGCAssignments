@@ -1,5 +1,4 @@
 // Requirements
-const multer = require("multer");
 const Pool = require("pg").Pool;
 
 // Connecting to PostgreSQL Database
@@ -11,7 +10,6 @@ const pool = new Pool({
   port: "5432",
 });
 
-// API functions for Routes
 // GET: /cars
 const getCars = (req, resp) => {
   try {
