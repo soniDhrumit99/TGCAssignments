@@ -43,7 +43,7 @@ app.get("/", (req, resp) => {
 app.get("/cars", db.getCars);
 app.get("/car/:id", db.getCarById);
 app.post("/car", db.postCar);
-app.post("/car/:id/image", upload.single("image"), db.postCarImage);
+app.post("/upload/:id", upload.single("image"), db.postCarImage);
 app.put("/car/:id", db.putCar);
 app.delete("/car/:id", db.deleteCar);
 

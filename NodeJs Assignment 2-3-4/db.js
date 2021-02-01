@@ -11,24 +11,20 @@ const pool = new Pool({
 });
 
 // GET: /cars
-const getCars = (req, resp) => {
+const getCars = async (req, resp) => {
   try {
-    pool
-      .query(
-        `
-        SELECT c.id, c.name, mo.name AS "model", mk.name AS "make",
-          (SELECT JSON_AGG(ROW_TO_JSON(x)) AS "images" FROM 
-            (SELECT ci.path FROM carimages ci WHERE ci.car_id = c.id) x) 
-          FROM cars c LEFT JOIN models mo ON c.model_id = mo.id 
-          LEFT JOIN make mk ON c.make_id = mk.id ORDER BY c.id ASC
-        `
-      )
-      .then((result) => {
-        resp.status(200).json(result.rows);
-      })
-      .catch((err) => {
-        resp.status(500).json(err);
+    const selectResult = await pool.query(
+      `SELECT c.id, c.name, mo.name AS "model", mk.name AS "make", 
+        (SELECT JSON_AGG(ROW_TO_JSON(x)) AS "images" FROM (SELECT ci.path FROM carimages ci WHERE ci.car_id = c.id) x) 
+        FROM cars c LEFT JOIN models mo ON c.model_id = mo.id LEFT JOIN make mk ON c.make_id = mk.id ORDER BY c.id ASC`
+    );
+    if (selectResult.rowCount < 1) {
+      resp.status(200).json({
+        result: "There are no cars to show !!",
       });
+    } else {
+      resp.status(200).json(selectResult.rows);
+    }
   } catch (err) {
     resp.status(500).json(err);
   }
@@ -37,31 +33,25 @@ const getCars = (req, resp) => {
 // GET: /car/:id
 const getCarById = async (req, resp) => {
   try {
-    const id = parseInt(req.params.id);
-    if (isNaN(id)) {
-      resp.status(400).json({
-        error: "Invalid Car Id",
-      });
-    } else {
-      const result = await pool.query(
-        `        
-        SELECT c.id, c.name, mo.name AS "model", mk.name AS "make",
-          (SELECT JSON_AGG(ROW_TO_JSON(x)) AS "images" FROM 
-            (SELECT ci.path FROM carimages ci WHERE ci.car_id = c.id) x) 
-          FROM cars c LEFT JOIN models mo ON c.model_id = mo.id 
-          LEFT JOIN make mk ON c.make_id = mk.id WHERE c.id = ${id} 
-        `
+    const id = checkId(req.params.id);
+    if (id != -1) {
+      const selectResult = await pool.query(
+        `SELECT c.id, c.name, mo.name AS "model", mk.name AS "make", 
+          (SELECT JSON_AGG(ROW_TO_JSON(x)) AS "images" FROM (SELECT ci.path FROM carimages ci WHERE ci.car_id = c.id) x) 
+          FROM cars c LEFT JOIN models mo ON c.model_id = mo.id LEFT JOIN make mk ON c.make_id = mk.id WHERE c.id = ${id}`
       );
-      if (result.rowCount < 1) {
+      if (selectResult.rowCount < 1) {
         resp.status(400).json({
           error: "Invalid Car Id",
         });
       } else {
-        resp.status(200).json(result.rows[0]);
+        resp.status(200).json(selectResult.rows[0]);
       }
     }
   } catch (err) {
-    resp.status(500).json(err);
+    resp.status(500).json({
+      error: err.message,
+    });
   }
 };
 
@@ -83,7 +73,7 @@ const postCar = async (req, resp) => {
         `INSERT INTO cars (name, model_id, make_id) VALUES ('${car.name}', '${model}', '${make}') RETURNING *`
       );
       if (insertResult.rowCount == 1) {
-        resp.status(200).json(insertResult.rows[0]);
+        resp.status(201).json(insertResult.rows[0]);
       } else {
         throw Error("Error in saving the car");
       }
@@ -98,17 +88,21 @@ const postCar = async (req, resp) => {
 // POST: /car/:id/image
 const postCarImage = async (req, resp) => {
   try {
-    const id = parseInt(req.params.id);
-    if (!isNaN(id)) {
+    const id = checkId(req.params.id);
+    if (id != -1) {
       const insertResult = await pool.query(
         `INSERT INTO carimages (car_id, path) 
-          VALUES (${id}, 'http:localhost:3000/images/${req.file.filename}') RETURNING *`
+          VALUES (${id}, 'http://localhost:3000/images/${req.file.filename}') RETURNING *`
       );
       if (insertResult.rowCount < 1) {
         throw Error("Error in saving image");
       } else {
         resp.status(201).json(insertResult.rows[0]);
       }
+    } else {
+      resp.status(400).json({
+        error: "Invalid Car Id",
+      });
     }
   } catch (err) {
     resp.status(500).json({
@@ -120,8 +114,8 @@ const postCarImage = async (req, resp) => {
 //PUT: /car/:id
 const putCar = async (req, resp) => {
   try {
-    const id = parseInt(req.params.id);
-    if (!isNaN(id)) {
+    const id = checkId(req.params.id);
+    if (id != -1) {
       if (req.body == null || req.body == undefined) {
         // req.body was empty so no data was received
         resp.status(400).json({
@@ -175,12 +169,14 @@ const putCar = async (req, resp) => {
         };
 
         const result = await pool.query(
-          `UPDATE cars SET name = '${newCar.name}', model_id = ${newCar.model}, make_id = ${newCar.make} WHERE id = ${newCar.id} RETURNING *`
+          `UPDATE cars SET name = '${newCar.name}', model_id = ${newCar.model}, make_id = ${newCar.make} WHERE id = ${newCar.id} RETURNING id`
         );
         if (result.rowCount < 1) {
           throw Error("Error in updating car details");
         } else {
-          resp.status(200).json(result.rows[0]);
+          resp.status(200).json({
+            success: `Car with id ${result.rows[0].id} updated successfully.`,
+          });
         }
       }
     } else {
@@ -198,23 +194,25 @@ const putCar = async (req, resp) => {
 // DELETE: /car/:id
 const deleteCar = async (req, resp) => {
   try {
-    const id = parseInt(req.params.id);
-    if (!isNaN(id)) {
+    const id = checkId(req.params.id);
+    if (id != -1) {
       if (await checkCar(id)) {
         const deleteResult = await pool.query(
-          `DELETE FROM cars WHERE cars.id = ${id} RETURNING *`
+          `DELETE FROM cars WHERE cars.id = ${id} RETURNING id`
         );
         if (deleteResult.rowCount < 1) {
           throw Error("Error in deleting the car");
         } else {
-          resp.status(200).json(deleteResult.rows[0]);
+          resp.status(200).json({
+            result: `Car with id ${deleteResult.rows[0].id} deleted successfully.`,
+          });
+          return;
         }
-      } else {
-        throw Error("Invalid Car Id");
       }
-    } else {
-      throw Error("Invalid car id");
     }
+    resp.status(400).json({
+      error: "Invalid Car Id",
+    });
   } catch (err) {
     resp.status(500).json({
       error: err.message,
@@ -238,6 +236,20 @@ const checkObject = (car) => {
     return;
   }
   throw Error("Invalid Car Details");
+};
+
+// Checking if Id passed is integer or not
+const checkId = (string) => {
+  try {
+    const id = parseInt(string);
+    if (isNaN(id)) {
+      return -1; // Invalid id flag
+    } else {
+      return id;
+    }
+  } catch (err) {
+    throw Error(err.message);
+  }
 };
 
 // Checking if Car record exists
