@@ -15,7 +15,7 @@ const getCars = async (req, resp) => {
   try {
     const selectResult = await pool.query(
       `SELECT c.id, c.name, mo.name AS "model", mk.name AS "make", 
-        (SELECT JSON_AGG(ROW_TO_JSON(x)) AS "images" FROM (SELECT ci.path FROM carimages ci WHERE ci.car_id = c.id) x) 
+        (SELECT JSON_AGG(x) AS "images" FROM (SELECT ci.path FROM carimages ci WHERE ci.car_id = c.id) x) 
         FROM cars c LEFT JOIN models mo ON c.model_id = mo.id LEFT JOIN make mk ON c.make_id = mk.id ORDER BY c.id ASC`
     );
     if (selectResult.rowCount < 1) {
@@ -37,7 +37,7 @@ const getCarById = async (req, resp) => {
     if (id != -1) {
       const selectResult = await pool.query(
         `SELECT c.id, c.name, mo.name AS "model", mk.name AS "make", 
-          (SELECT JSON_AGG(ROW_TO_JSON(x)) AS "images" FROM (SELECT ci.path FROM carimages ci WHERE ci.car_id = c.id) x) 
+          (SELECT JSON_AGG(x) AS "images" FROM (SELECT ci.path FROM carimages ci WHERE ci.car_id = c.id) x) 
           FROM cars c LEFT JOIN models mo ON c.model_id = mo.id LEFT JOIN make mk ON c.make_id = mk.id WHERE c.id = ${id}`
       );
       if (selectResult.rowCount < 1) {

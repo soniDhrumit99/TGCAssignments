@@ -47,6 +47,13 @@ app.post("/upload/:id", upload.single("image"), db.postCarImage);
 app.put("/car/:id", db.putCar);
 app.delete("/car/:id", db.deleteCar);
 
+// Catching all other routes
+app.use("*", (req, resp) => {
+  resp.status(404).json({
+    error: "Resource not found",
+  });
+});
+
 // Serving images
 app.use("/images", express.static(path.join(__dirname, "uploads")));
 
