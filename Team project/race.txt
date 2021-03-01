@@ -1,0 +1,52 @@
+Race API
+
+	post a race
+	get list of all races
+	get race by id
+	delete race
+	update race
+	participate in race (register)
+	show results
+
+UI Part
+
+	Participation form
+	Details page
+	Results page
+	Calender page
+	Training Table
+	Breeding Table
+	Add/Update Race form
+	Add/Update Results form (optional)
+	Add/Update Training form
+	Add/Update Breeding form
+
+Race Table
+
+	Race id
+	Race name
+	Race Arena/Stadium
+	Race Date
+	Race Category
+	Race type
+	Race length
+	Race horse age criteria
+	Race horse weight criteria
+	Race fees
+	Race Conditions
+	Race prize
+	is_completed
+	created_at
+	updated_at
+
+Participants
+
+	Race_id
+	User_id
+	Rider_name
+	Horse_id
+	Track_number
+	time_taken_to_complete
+	finished (on which number he finished)
+	prize_won
+
