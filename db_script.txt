@@ -1,0 +1,286 @@
+CREATE TABLE public.user_roles (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	user_role varchar(30) NOT NULL,
+	CONSTRAINT pk_user_roles PRIMARY KEY (id)
+);
+COMMENT ON TABLE public.user_roles IS 'User role table defines the roles a user can take';
+
+CREATE TABLE public.login (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	email varchar(60) NOT NULL,
+	user_password varchar(60) NOT NULL,
+	is_active bool NOT NULL DEFAULT TRUE,
+	CONSTRAINT pk_login PRIMARY KEY (id)
+);
+COMMENT ON TABLE public.login IS 'Login table contains email and password for logging in';
+
+CREATE TABLE public.users (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	first_name varchar(30) NOT NULL,
+	middle_name varchar(30) NULL,
+	last_name varchar(30) NOT NULL,
+	phone_region varchar(2) NULL,
+	phone_number varchar(16) NULL,
+	country varchar(30) NULL,
+	user_role int4 NOT NULL,
+	created_at timestamp(0) NOT NULL,
+	updated_at timestamp(0) NOT NULL,
+	CONSTRAINT pk_users PRIMARY KEY (id),
+	CONSTRAINT fk_users_user_role_user_roles_id FOREIGN KEY (user_role) REFERENCES public.user_roles(id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+COMMENT ON TABLE public.users IS 'User table contains all the details of a user';
+
+CREATE TABLE public.horse_breeds (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	breed varchar(50) NOT NULL,
+	CONSTRAINT pk_horse_breeds PRIMARY KEY (id)
+);
+COMMENT ON TABLE public.horse_breeds IS 'Horse breeds table defines all the breeds that a horse can be of';
+
+CREATE TABLE public.horse_colors (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	color varchar(30) NOT NULL,
+	CONSTRAINT pk_horse_colors PRIMARY KEY (id)
+);
+COMMENT ON TABLE public.horse_colors IS 'Horse colors table defines all the colors a horse can be of';
+
+CREATE TABLE public.horse_disciplines (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	discipline varchar(50) NOT NULL,
+	CONSTRAINT pk_horse_disciplines PRIMARY KEY (id)
+);
+COMMENT ON TABLE public.horse_disciplines IS 'Horse discipline table defines all the disciplines a horse can belong to';
+
+CREATE TABLE public.horse_genders (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	gender varchar(30) NOT NULL,
+	CONSTRAINT pk_horse_genders PRIMARY KEY (id)
+);
+COMMENT ON TABLE public.horse_genders IS 'Horse genders table contains all the genders a horse can belong to';
+
+CREATE TABLE public.events (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	event_type varchar(50) NOT NULL,
+	CONSTRAINT pk_events PRIMARY KEY (id)
+);
+COMMENT ON TABLE public.events IS 'Events table defiesn the events that can be inserted in journal';
+
+CREATE TABLE public.race_types (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	race_type varchar(30) NOT NULL,
+	CONSTRAINT pk_race_types PRIMARY KEY (id)
+);
+COMMENT ON TABLE public.race_types IS 'Race types defines different types of races';
+
+CREATE TABLE public.news (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	title varchar(150) NOT NULL,
+	description varchar(500) NOT NULL,
+	photo varchar(100) NULL,
+	reference varchar(200) NOT NULL,
+	is_active bool NOT NULL DEFAULT TRUE,
+	created_at timestamp(0) NOT NULL,
+	updated_at timestamp(0) NOT NULL,
+	CONSTRAINT pk_news PRIMARY KEY (id)
+);
+COMMENT ON TABLE public.news IS 'News table is used to show latest news to our users';
+
+CREATE TABLE public.races (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	title varchar(50) NOT NULL,
+	description varchar(200) NULL,
+	organizer_name varchar(30) NOT NULL,
+	race_type int4 NOT NULL,
+	criteria varchar(200) NULL,
+	rules varchar(200) NULL,
+	is_cancelled bool NOT NULL DEFAULT FALSE,
+	created_at timestamp(0) NOT NULL,
+	updated_at timestamp(0) NOT NULL,
+	CONSTRAINT pk_races PRIMARY KEY (id),
+	CONSTRAINT fk_races_race_type_race_types_id FOREIGN KEY (race_type) REFERENCES public.race_types(id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+COMMENT ON TABLE public.races IS 'Races table stores all the information about races';
+
+CREATE TABLE public.horses (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	horse_name varchar(50) NOT NULL,
+	owner_id int4 NOT NULL,
+	show_name varchar(50) NULL,
+	gender_id int4 NOT NULL,
+	breed_id int4 NOT NULL,
+	color_id int4 NOT NULL,
+	discipline_id int4 NOT NULL,
+	microchip_number int8 NULL,
+	horse_weight float4 NULL,
+	horse_height float4 NULL,
+	birthdate date NOT NULL,
+	father varchar(50) NULL,
+	mother varchar(50) NULL,
+	is_active bool NOT NULL DEFAULT TRUE,
+	created_at timestamp(0) NOT NULL;
+	updated_at timestamp(0) NOT NULL;
+	CONSTRAINT pk_horses PRIMARY KEY (id),
+	CONSTRAINT fk_horses_breed_id_breeds_id FOREIGN KEY (breed_id) REFERENCES public.horse_breeds(id) ON DELETE RESTRICT ON UPDATE CASCADE,
+	CONSTRAINT fk_horses_color_id_colors_id FOREIGN KEY (color_id) REFERENCES public.horse_colors(id) ON DELETE RESTRICT ON UPDATE CASCADE,
+	CONSTRAINT fk_horses_discipline_id_disciplines_id FOREIGN KEY (discipline_id) REFERENCES public.horse_disciplines(id) ON DELETE RESTRICT ON UPDATE CASCADE,
+	CONSTRAINT fk_horses_gender_id_genders_id FOREIGN KEY (gender_id) REFERENCES public.horse_genders(id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+COMMENT ON TABLE public.horses IS 'Horses table is used to store all the information about all the horses';
+
+CREATE TABLE public.journal (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	event_type int4 NOT NULL,
+	horse_id int4 NOT NULL,
+	title varchar(50) NULL,
+	decsription varchar(200) NULL,
+	start_date date NOT NULL,
+	end_date date NOT NULL,
+	is_deleted bool NOT NULL DEFAULT FALSE,
+	created_at timestamp(0) NOT NULL,
+	updated_at timestamp(0) NOT NULL,
+	CONSTRAINT pk_journal PRIMARY KEY (id),
+	CONSTRAINT fk_journal_event_type_events_id FOREIGN KEY (event_type) REFERENCES public.events(id) ON DELETE RESTRICT ON UPDATE CASCADE,
+	CONSTRAINT fk_journal_horse_id_horses_id FOREIGN KEY (horse_id) REFERENCES public.horses(id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+COMMENT ON TABLE public.journal IS 'Journal table is used to track activities done by or on horse';
+
+CREATE TABLE public.training_centers (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	center_name varchar(100) NOT NULL,
+	owner_name varchar(50) NOT NULL,
+	description varchar(200) NULL,
+	experience int4 NULL,
+	address varchar(100) NULL,
+	email varchar(60) NULL,
+	website varchar(100) NULL,
+	contact varchar(15) NULL,
+	working_hours varchar(50) NULL,
+	image_path varchar(100) NULL;
+	is_active bool NOT NULL DEFAULT TRUE,
+	created_at timestamp(0) NOT NULL,
+	updated_at timestamp(0) NOT NULL,
+	CONSTRAINT pk_training_center PRIMARY KEY (id)
+);
+COMMENT ON TABLE public.training_centers IS 'Training center table losts all the training centers';
+
+CREATE TABLE public.trainers (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	center_id int4 NOT NULL,
+	trainer_name varchar(30) NOT NULL,
+	experience varchar(30),
+	is_active bool NOT NULL DEFAULT TRUE,
+	created_at timestamp(0) NOT NULL,
+	updated_at timestamp(0) NOT NULL,
+	CONSTRAINT pk_trainers PRIMARY KEY (id),
+	CONSTRAINT fk_trainers_center_id_training_centers_id FOREIGN KEY (center_id) REFERENCES public.training_centers(id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+COMMENT ON TABLE public.trainers IS 'This table contains all the trainers for all the Training center';
+
+CREATE TABLE public.breeding_centers (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	center_name varchar(100) NOT NULL,
+	description varchar(200) NULL,
+	owner_name varchar(30) NOT NULL,
+	experience int4 NULL,
+	address varchar(200) NOT NULL,
+	email varchar(60) NULL,
+	website varchar(100) NULL,
+	contact varchar(15) NULL,
+	working_hours varchar(50) NULL,
+	image_path varchar(100) NULL;
+	is_active bool NOT NULL DEFAULT TRUE,
+	created_at timestamp(0) NOT NULL,
+	updated_at timestamp(0) NOT NULL,
+	CONSTRAINT pk_breeding_centers PRIMARY KEY (id)
+);
+COMMENT ON TABLE public.breeding_centers IS 'This table contains all the information about all the breeding centers';
+
+CREATE TABLE public.breeders (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	center_id int4 NOT NULL,
+	breeder_name varchar(30) NOT NULL,
+	experience varchar(30),
+	is_active bool NOT NULL DEFAULT TRUE,
+	created_at timestamp(0) NOT NULL,
+	updated_at timestamp(0) NOT NULL,
+	CONSTRAINT pk_breeders PRIMARY KEY (id),
+	CONSTRAINT fk_breeders_center_id_breeding_centers_id FOREIGN KEY (center_id) REFERENCES public.breeding_centers(id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+COMMENT ON TABLE public.breeders IS 'This table contains all the breeders for all the breeding center';
+
+CREATE TABLE public.notifications (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	user_id int4 NOT NULL,
+	title varchar(30) NOT NULL,
+	description varchar(100) NOT NULL,
+	expiry_date date NOT NULL,
+	is_shown bool NOT NULL DEFAULT FALSE,
+	show_again bool NOT NULL DEFAULT TRUE,
+	created_at timestamp(0) NOT NULL,
+	updated_at timestamp(0) NOT NULL,
+	CONSTRAINT pk_notifications PRIMARY KEY (id),
+	CONSTRAINT "fk_notifications-user_id_users_id" FOREIGN KEY (user_id) REFERENCES public.users(id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+COMMENT ON TABLE public.notifications IS 'This table lists all the notifications that are to be shown or ones that were shown to the user';
+
+CREATE TABLE public.purchases (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	user_id int4 NOT NULL,
+	horse_id int4 NOT NULL,
+	price float4 NOT NULL,
+	bought_date date NOT NULL,
+	bought_from varchar(30) NOT NULL,
+	CONSTRAINT pk_purchases PRIMARY KEY (id),
+	CONSTRAINT fk_purchses_user_id_users_id FOREIGN KEY (user_id) REFERENCES public.users(id) ON DELETE RESTRICT ON UPDATE cascade,
+	CONSTRAINT fk_purchases_horse_id_horses_id FOREIGN KEY (horse_id) REFERENCES public.horses(id) ON DELETE RESTRICT ON UPDATE CASCADE
+
+);
+COMMENT ON TABLE public.purchases IS 'This table keeps track of all the horse purchases made by the user';
+
+CREATE TABLE public.sales (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	user_id int4 NOT NULL,
+	horse_id int4 NOT NULL,
+	price float4 NOT NULL,
+	is_active bool NOT NULL DEFAULT TRUE,
+	sale_date date NULL,
+	sold_to varchar(30) NULL,
+	created_at timestamp(0) NOT NULL,
+	updated_at timestamp(0) NOT NULL,
+	CONSTRAINT pk_sales PRIMARY KEY (id),
+	CONSTRAINT fk_sales_user_id_users_id FOREIGN KEY (user_id) REFERENCES public.users(id) ON DELETE RESTRICT ON UPDATE CASCADE,
+	CONSTRAINT fk_sales_horse_id_horses_id FOREIGN KEY (horse_id) REFERENCES public.horses(id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+COMMENT ON TABLE public.sales IS 'This table keeps track of all the horses sold by the user';
+
+CREATE TABLE public.races (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	race_name varchar(50) NOT NULL,
+	racecourse varchar(50) NOT NULL,
+	race_date date NOT NULL,
+	track_length float4 NULL,
+	age_criteria int4 NULL,
+	weight_criteria int4 NULL,
+	fees float4 NULL,
+	is_completed bool NOT NULL DEFAULT FALSE,
+	is_cancelled bool NOT NULL DEFAULT FALSE,
+	created_at timestamp(0) NOT NULL,
+	updated_at timestamp(0) NOT NULL,
+	CONSTRAINT pk_races PRIMARY KEY (id)
+);
+COMMENT ON TABLE public.races IS 'This table contains all the entries of past present and future races';
+
+CREATE TABLE public.race_participants (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	race_id int4 NOT NULL,
+	user_id int4 NOT NULL,
+	horse_id int4 NOT NULL,
+	rider_name varchar(30) NOT NULL,
+	attended bool NULL,
+	finish_position int4 NULL,
+	CONSTRAINT pk_race_participants PRIMARY KEY (id),
+	CONSTRAINT fk_race_participants_race_id_races_id FOREIGN KEY (race_id) REFERENCES public.races(id) ON DELETE RESTRICT ON UPDATE CASCADE,
+	CONSTRAINT fk_race_participants_user_id_users_id FOREIGN KEY (user_id) REFERENCES public.users(id) ON DELETE RESTRICT ON UPDATE CASCADE,
+	CONSTRAINT fk_race_participants_horse_id_horses_id FOREIGN KEY (horse_id) REFERENCES public.horses(id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+COMMENT ON TABLE public.race_participants IS 'This table contains all the entries of users that participated in any race';
