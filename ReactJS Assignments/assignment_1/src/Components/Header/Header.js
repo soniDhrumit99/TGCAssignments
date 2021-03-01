@@ -1,8 +1,9 @@
 import "./Header.css";
-function Header() {
+
+function Header(props) {
   const element = (
     <div className="header">
-      <h1>Header</h1>
+      <h1>{props.title}</h1>
     </div>
   );
   return element;
