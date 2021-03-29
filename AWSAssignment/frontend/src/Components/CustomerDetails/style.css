@@ -1,0 +1,36 @@
+.relative{
+  position: relative;
+}
+
+.bordered{
+  border-left: 3px solid #3d70b2;
+}
+
+form, form input{
+  font-size: 1.3rem!important;
+}
+
+.edit-btn{
+  background-color: #3d70b2!important;
+  color: #f0f3f6!important;
+  font-weight: 500!important;
+}
+
+.loading{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3d70b2;
+  background-color: #f0f3f6;
+  z-index: 5;
+}
+
+.loading.hide{
+  opacity: 0;
+  visibility: hidden;
+}
