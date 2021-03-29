@@ -105,6 +105,7 @@ namespace DatabaseAccess.Classes
             {
                 room = db.Rooms.Add(room);
                 db.SaveChanges();
+                
                 return room;
             }
             catch (Exception e)

@@ -63,6 +63,11 @@ namespace API.Controllers
          * Request: api/Hotel/add
          * Type: POST
          */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="hotel"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("add")]
         public IHttpActionResult PostHotel(Hotels hotel)
